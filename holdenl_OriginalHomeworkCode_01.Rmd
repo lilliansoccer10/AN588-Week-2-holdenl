@@ -1,8 +1,9 @@
 ---
-title: "Coding Challenges From Module 4 and On"
+title: "Coding Challenges From Module 4"
 Name: Lillian Holden
-output: html_document
-date: "2023-09-14"
+output: 
+  html_document: 
+    theme: readable
 ---
 
 ```{r setup, include=FALSE}
@@ -13,14 +14,14 @@ knitr::opts_chunk$set(echo = TRUE)
 library(stringr)
 ```
 
-
+Challenge 1
 ```{r Challenge-1}
 v1 <- c("Stately,", "plump", "Buck", "Mulligan", "came", "from", "the", "stairhead,", "bearing", "a", "bowl", "of", "lather", "on", "which", "a", "mirror", "and", "a", "razor", "lay", "crossed.") 
 str_split(v1,"Buck", n=1, simplify=FALSE)
 v1[c(3,6,9,12,15,18,21)]
 ```
 [1] "Buck"    "from"    "bearing" "of"      "which"   "and"     "lay"    
-```{r Ch}
+```{r Challenge 3, include=FALSE}
 m<- matrix(data=1:80, nrow=8, ncol=10, byrow=FALSE)
 x<-m[,2]
 x
