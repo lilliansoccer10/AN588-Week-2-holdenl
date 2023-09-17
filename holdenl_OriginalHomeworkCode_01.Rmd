@@ -1,5 +1,5 @@
 ---
-title: "Coding Challenges From Module 4"
+title: "Coding Challenges Module 4"
 Name: Lillian Holden
 output: 
   html_document: 
