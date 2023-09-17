@@ -12,7 +12,7 @@ date: "2023-09-17"
 
 #Challenge #1
 
-#create a vector using a string of individual words. Assign the vector to the string of words by doing v1 <- c("...","...")
+#Create a vector using a string of individual words. Assign the vector to the string of words by using the command v1 <- c("...","...")
 
 > v1 <- c("Stately,", "plump", "Buck", "Mulligan", "came", "from", "the", "stairhead,", "bearing", "a", "bowl", "of", "lather", "on", "which", "a", "mirror", "and", "a", "razor", "lay", "crossed.") 
 
@@ -95,7 +95,7 @@ date: "2023-09-17"
 [[22]]
 [1] "crossed."
 
-#Extract individual words by using the number it was assigned. example 21 "lay". type v1[c(...,...,...)]
+#Extract individual words by using the number it was assigned. Ex: "lay" is assigned to number 21. Type the code v1[c(...,...,...)]
 
 > v1[c(3,6,9,12,15,18,21)]
 [1] "Buck"    "from"    "bearing" "of"      "which"   "and"     "lay"    
@@ -103,7 +103,10 @@ date: "2023-09-17"
 #Challenge #2
 
 #Create your matrix by using the code m <- matrix(data=...:..., nrow=..., ncol+..., byrow=TRUE)
+
 > m<- matrix(data=1:80, nrow=8, ncol=10, byrow=TRUE)
+
+#Check that your matrix is correct by typing m
 
 > m
      [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
@@ -116,7 +119,7 @@ date: "2023-09-17"
 [7,]    7   15   23   31   39   47   55   63   71    79
 [8,]    8   16   24   32   40   48   56   64   72    80
 
-#Assign x to the colmns, rows you would like to. x <- m[c(row,column)]
+#Assign the colmns, rows you would like to to the letter x by typing the code x <- m[c(row,column)]
 
 > x<-m[,2]
 
@@ -311,7 +314,7 @@ date: "2023-09-17"
 [4,]   22   17   12    7    2
 [5,]   21   16   11    6    1
 
-#Extract by using a[...,...]
+#Extract data fronm the array by typing the code a[...,...]
 
 > a[1,1,1,2]
 [1] 300
