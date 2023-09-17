@@ -1,16 +1,29 @@
 ---
 title: "Coding Challenges Module 4"
-Name: Lillian Holden
+author: "Lillian Holden"
+subtitle: "AN588 Week 2 "
 output: 
   html_document: 
     theme: paper
 editor_options: 
   chunk_output_type: inline
 ---
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+
+Reflection
+
+Three things that were difficult during the homework: 
+I had a hard time figuring out how to knit the the RMarkdown. I realized that I needed to put the codes into chunks, so that they were able to be run. I also had a hard time getting the codes to run because I needed to make sure the stringr library was enabled. I made sure that this was enabled by typing "library(stringr) into its own chunk. Lastly, I had a hard time getting the codes to output in the RMarkdown file, rather than the console. I solved this issue by going to the settings next to "Knit" and selecting "Chunk Output Inline." Then, I ran each chunk to display the outputs in the RMarkdown file.
+
+Three things that were useful in my peers commentary: 
+
+Two things I like about my peers code:
+
+One thing I do not like about my peers code: 
+
 
 ```{r}
 library(stringr)
