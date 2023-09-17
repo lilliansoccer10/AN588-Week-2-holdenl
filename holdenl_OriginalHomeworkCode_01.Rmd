@@ -4,6 +4,8 @@ Name: Lillian Holden
 output: 
   html_document: 
     theme: paper
+editor_options: 
+  chunk_output_type: inline
 ---
 
 ```{r setup, include=FALSE}
