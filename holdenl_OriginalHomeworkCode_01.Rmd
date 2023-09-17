@@ -9,20 +9,13 @@ Module 4
 
 >install.packages(stringr)
 
-> library(stringr)
+>library(stringr)
 
 Challenge #1
 
-#create a vector using a string of individual words. Assign the vector to the string of words by doing v1 <- c("...","...")
-
 > v1 <- c("Stately,", "plump", "Buck", "Mulligan", "came", "from", "the", "stairhead,", "bearing", "a", "bowl", "of", "lather", "on", "which", "a", "mirror", "and", "a", "razor", "lay", "crossed.") 
 
-#Make sure the vector is correct by typing v1
-
 > v1
- [1] "Stately,"   "plump"      "Buck"       "Mulligan"   "came"       "from"       "the"        "stairhead,"
- [9] "bearing"    "a"          "bowl"       "of"         "lather"     "on"         "which"      "a"         
-[17] "mirror"     "and"        "a"          "razor"      "lay"        "crossed."  
 
 #str_split() takes a character vector and returns a list.
 #str_split(string, pattern, n = Inf, simplify = FALSE)
@@ -417,7 +410,9 @@ Challenge #5
 #Check the class of each data column by using df[,comumn number]
 
 > df[,2] <- as.logical(df[,2])
+
 > df[,3] <- as.factor(df[,3])
+
 > str(df)
 'data.frame':	5 obs. of  3 variables:
  $ X1: num  3 23 33 42 41
