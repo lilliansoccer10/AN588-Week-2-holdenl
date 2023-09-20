@@ -46,12 +46,14 @@ library(stringr)
 ```
 
 Challenge 1
+
 ```{r Challenge-1}
 v1 <- c("Stately,", "plump", "Buck", "Mulligan", "came", "from", "the", "stairhead,", "bearing", "a", "bowl", "of", "lather", "on", "which", "a", "mirror", "and", "a", "razor", "lay", "crossed.") 
 str_split(v1,"Buck", n=1, simplify=FALSE)
 v1[c(3,6,9,12,15,18,21)]
 ```
 Challenge 2
+
 ```{r Challenge-2}
 m<- matrix(data=1:80, nrow=8, ncol=10, byrow=FALSE)
 x<-m[,2]
@@ -62,6 +64,7 @@ x<-m[c(6,8),]
 x
 ```
 Challenge 3
+
 ```{r}
 
 a<-array(data=400:1, dim=c(5,5,4,4))
@@ -71,6 +74,7 @@ a[1:5,1:5,3,3]
 a[2,3,2,]
 ```
 Challenge 4
+
 ```{r}
 Lemuroidea<-c("Cheirogaleidae", "Lepilemuridae","Indridae", "Lemuridae", "Daubentoniidae")
 Lorisoidea<-c("Lorisidae","Galagidae")
@@ -101,6 +105,7 @@ names(Primates)<-list("Haplorhini","Strepsirhini")
 Primates
 ```
 Challenge 5 
+
 ```{r}
 m3<-matrix(data=c(3,0,1,23,1,2,33,1,1,42,0,1,41,0,2),nrow=5,ncol=3,byrow=TRUE)
 data.frame(m3)
