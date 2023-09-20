@@ -13,14 +13,14 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-Reflection
+<center> Reflection <center> 
 
 Three things that were difficult during the homework: 
 I had a hard time figuring out how to knit the the RMarkdown. I realized that I needed to put the codes into chunks, so that they were able to be run. I also had a hard time getting the codes to run because I needed to make sure the stringr library was enabled. I made sure that this was enabled by typing "library(stringr) into its own chunk. Lastly, I had a hard time getting the codes to output in the RMarkdown file, rather than the console. I solved this issue by going to the settings next to "Knit" and selecting "Chunk Output Inline." Then, I ran each chunk to display the outputs in the RMarkdown file.
  
 My Peer: Allister Malik
 
-Three things that were useful in my peers commentary: 
+Three things that were useful in my peers commentary: I found it useful that ALlister said I should add heads to distinguish between the different challenges. Because he let me know that they were headers that he added, I was able to figure out how to create them buy researching how. I thought it wsa useful that he commented on how simple my coding is. I had originally had numerous aspects of my code that I deleted because I found them unnecessary. Lastly, 
 
 Two things I like about my peers code: I like that he was able to make his chunk names/category names match the title font in the HTML file. I also like that he was able to find an easier way to extract every third element in challenge 3 as I had to extract them individually. 
 
