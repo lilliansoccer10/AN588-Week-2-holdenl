@@ -13,12 +13,16 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-
 Reflection
 
 Three things that were difficult during the homework: 
 I had a hard time figuring out how to knit the the RMarkdown. I realized that I needed to put the codes into chunks, so that they were able to be run. I also had a hard time getting the codes to run because I needed to make sure the stringr library was enabled. I made sure that this was enabled by typing "library(stringr) into its own chunk. Lastly, I had a hard time getting the codes to output in the RMarkdown file, rather than the console. I solved this issue by going to the settings next to "Knit" and selecting "Chunk Output Inline." Then, I ran each chunk to display the outputs in the RMarkdown file.
  
+Peer Commentary:
+  
+I also had trouble on trouble with Knitting the code, although my specific issue with knitting was different(my issue was with the YAML, not chunking). You've taught me a useful button in Rstudio as well. I did not know about the "Chunk Output Inline" button, which I plan to check out. However, it is a bit confusing on the exact problem you were facing (to me at least) because I didn't have that problem. I also really like how you displayed the packages you used (although it was to actually install the package); it is a good way of showing others how to do the challenges from step 0 and what packages you used if it was an unconventional method(s). It's a good idea that I'll start using.Spacing out the challenges or formatting a header would help locate each challenge done, especially if you had multiple challenges or long code. My code has the headings and spaces so its easy navigable. I'll be a great addition to the aesthetic of the file. Looking at this code is useful for me learning how to properly use the strsplit and coercion function from Challenge 1 because I was struggling to use them in the way done here. I also like the simplicity of the code. I feel like I did a bit much compared to your code. I realized a lot of the lines of code I wrote were unnecessary. 
+ 
+Your annotation/comment were clear and legible
  
 Three things that were useful in my peers commentary: 
 
