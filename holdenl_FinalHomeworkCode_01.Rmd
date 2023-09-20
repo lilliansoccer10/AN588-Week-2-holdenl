@@ -3,5 +3,102 @@ title: "Final Homework Code"
 Subtitle: "Assignment Due September 20th, 2023 by 5PM"
 author: "Lillian Holden"
 date: "2023-09-20"
-output: html_document
+output: 
+  html_document: 
+    theme: cerulean
 ---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Reflection
+
+Three things that were difficult during the homework: 
+I had a hard time figuring out how to knit the the RMarkdown. I realized that I needed to put the codes into chunks, so that they were able to be run. I also had a hard time getting the codes to run because I needed to make sure the stringr library was enabled. I made sure that this was enabled by typing "library(stringr) into its own chunk. Lastly, I had a hard time getting the codes to output in the RMarkdown file, rather than the console. I solved this issue by going to the settings next to "Knit" and selecting "Chunk Output Inline." Then, I ran each chunk to display the outputs in the RMarkdown file.
+ 
+My Peer: Allister Malik
+
+Three things that were useful in my peers commentary: 
+
+Two things I like about my peers code: I like that he was able to make his chunk names/category names match the title font in the HTML file. I also like that he was able to find an easier way to extract every third element in challenge 3 as I had to extract them individually. 
+
+One thing I do not like about my peers code: One thing that I did not like about his code is that once he created a matrix of numbers in challenge 2, he did not add a code to view it in its original state before making changes to it. 
+
+
+```{r}
+library(stringr)
+```
+
+#Challenge 1
+
+```{r Challenge-1}
+v1 <- c("Stately,", "plump", "Buck", "Mulligan", "came", "from", "the", "stairhead,", "bearing", "a", "bowl", "of", "lather", "on", "which", "a", "mirror", "and", "a", "razor", "lay", "crossed.") 
+str_split(v1,"Buck", n=1, simplify=FALSE)
+v1[c(3,6,9,12,15,18,21)]
+```
+##Challenge 2
+
+```{r Challenge-2}
+m<- matrix(data=1:80, nrow=8, ncol=10, byrow=FALSE)
+x<-m[,2]
+x
+x<-m[,c(2,3,6)]
+x
+x<-m[c(6,8),]
+x
+```
+###Challenge 3
+
+```{r}
+
+a<-array(data=400:1, dim=c(5,5,4,4))
+a
+a[1,1,1,2]
+a[1:5,1:5,3,3]
+a[2,3,2,]
+```
+####Challenge 4
+
+```{r}
+Lemuroidea<-c("Cheirogaleidae", "Lepilemuridae","Indridae", "Lemuridae", "Daubentoniidae")
+Lorisoidea<-c("Lorisidae","Galagidae")
+Strepsirhini<-list("Lemuroidea","Lorisoidea")
+Strepsirhini
+Lemuroidea<-c("Cheirogaleidae", "Lepilemuridae","Indridae", "Lemuridae", "Daubentoniidae")
+Lorisoidea<-c("Lorisidae","Galagidae")
+Strepsirhini<-list("Lemuroidea","Lorisoidea")
+names(Strepsirhini)<-list("Lemuroidea","Lorisoidea")
+Strepsirhini
+Lemuroidea<-c("Cheirogaleidae", "Lepilemuridae","Indridae", "Lemuridae", "Daubentoniidae")
+Lorisoidea<-c("Lorisidae","Galagidae")
+Strepsirhini<-list(Lemuroidea,Lorisoidea)
+names(Strepsirhini)<-list("Lemuroidea","Lorisoidea")
+Strepsirhini
+Tarsioidea<-c("Tarsiidae")
+Catarrhini<-c("Cercopithecidae","Hylobatidae","Hominidae")
+Platyrrhini<-c("Cebidae","Atelidae","Pitheciidae")
+Anthropoidea<-c("Platyrrhini","Catarrhini")
+Haplorhini<-list(Anthropoidea,Tarsioidea)
+names(Haplorhini)<-list("Anthropoidea","Tarsioidea")
+Haplorhini
+Haplorhini<-list(Anthropoidea,Platyrrhini,Catarrhini,Tarsioidea)
+names(Haplorhini)<-list("Anthropoidea","Platyrrhini","Catarrhini","Tarsioidea")
+Haplorhini
+Primates<-list(Haplorhini,Strepsirhini)
+names(Primates)<-list("Haplorhini","Strepsirhini")
+Primates
+```
+#####Challenge 5 
+
+```{r}
+m3<-matrix(data=c(3,0,1,23,1,2,33,1,1,42,0,1,41,0,2),nrow=5,ncol=3,byrow=TRUE)
+data.frame(m3)
+df <- data.frame(m3)
+df[,2] <- as.logical(df[,2])
+df[,3] <- as.factor(df[,3])
+str(df)
+```
+
+<center> End of Final Homework <center> 
