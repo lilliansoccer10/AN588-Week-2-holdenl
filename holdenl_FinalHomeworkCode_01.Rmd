@@ -1,8 +1,8 @@
 ---
 title: "Final Homework Code"
-Subtitle: "Assignment Due September 20th, 2023 by 5PM"
-author: "Lillian Holden"
-date: "2023-09-20"
+subtitle: "Assignment Due September 20th, 2023 by 5PM"
+author: "By: Lillian Holden"
+date: "Date: 2023-09-20"
 output: 
   html_document: 
     theme: cerulean
@@ -12,9 +12,9 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+<center><center>
 
-
-<center> Reflection <center> 
+### Reflection
 
 Three things that were difficult during the homework: 
 I had a hard time figuring out how to knit the the RMarkdown. I realized that I needed to put the codes into chunks, so that they were able to be run. I also had a hard time getting the codes to run because I needed to make sure the stringr library was enabled. I made sure that this was enabled by typing "library(stringr) into its own chunk. Lastly, I had a hard time getting the codes to output in the RMarkdown file, rather than the console. I solved this issue by going to the settings next to "Knit" and selecting "Chunk Output Inline." Then, I ran each chunk to display the outputs in the RMarkdown file.
@@ -32,16 +32,18 @@ One thing I do not like about my peers code: One thing that I did not like about
 library(stringr)
 ```
 
-#Challenge 1
+### Challenge 1
 
-```{r Challenge-1}
+```{r}
 v1 <- c("Stately,", "plump", "Buck", "Mulligan", "came", "from", "the", "stairhead,", "bearing", "a", "bowl", "of", "lather", "on", "which", "a", "mirror", "and", "a", "razor", "lay", "crossed.") 
 str_split(v1,"Buck", n=1, simplify=FALSE)
 v1[c(3,6,9,12,15,18,21)]
 ```
-##Challenge 2
 
-```{r Challenge-2}
+
+### Challenge 2
+
+```{r}
 m<- matrix(data=1:80, nrow=8, ncol=10, byrow=FALSE)
 x<-m[,2]
 x
@@ -50,7 +52,9 @@ x
 x<-m[c(6,8),]
 x
 ```
-###Challenge 3
+
+
+### Challenge 3
 
 ```{r}
 
@@ -60,7 +64,9 @@ a[1,1,1,2]
 a[1:5,1:5,3,3]
 a[2,3,2,]
 ```
-####Challenge 4
+
+
+### Challenge 4
 
 ```{r}
 Lemuroidea<-c("Cheirogaleidae", "Lepilemuridae","Indridae", "Lemuridae", "Daubentoniidae")
@@ -91,7 +97,9 @@ Primates<-list(Haplorhini,Strepsirhini)
 names(Primates)<-list("Haplorhini","Strepsirhini")
 Primates
 ```
-#####Challenge 5 
+
+
+### Challenge 5 
 
 ```{r}
 m3<-matrix(data=c(3,0,1,23,1,2,33,1,1,42,0,1,41,0,2),nrow=5,ncol=3,byrow=TRUE)
@@ -101,5 +109,8 @@ df[,2] <- as.logical(df[,2])
 df[,3] <- as.factor(df[,3])
 str(df)
 ```
+
+
+
 
 <center> End of Final Homework <center> 
